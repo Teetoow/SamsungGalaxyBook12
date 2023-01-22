@@ -26,6 +26,7 @@ typedef struct {
 } displayBrightness_t;
 
 
+extern int accessParaAuxRegs(aux_t aux);
 extern displayBrightness_t* initBrightness(aux_t aux, int colorProfile);
 extern void setBrightness(aux_t aux, displayBrightness_t *dp, char brightness);
 extern void setColorProfile(aux_t aux, displayBrightness_t *dp, char colorProfileNr);

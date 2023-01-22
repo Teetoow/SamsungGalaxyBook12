@@ -35,7 +35,7 @@ typedef struct {
 /* 
  * Communication with the display
  */
-int _accessParaAuxRegs(aux_t aux)
+int accessParaAuxRegs(aux_t aux)
 {
     const char *cmd="PARAAUX-REG";
 
@@ -45,7 +45,6 @@ int _accessParaAuxRegs(aux_t aux)
         for (int i=0; cmd[i]; i++)
             dpAuxWrite(aux, 0x490, cmd[i]);
         res = dpAuxRead(aux, 0x490);
-        printf("res=%i\n", (int)res);
         if (res > 0)
             return 0;
     }
@@ -445,7 +444,7 @@ displayBrightness_t* initBrightness(aux_t aux, int highBrightnessMode)
     displayBrightness_t* dp;
     initData_t data;
 
-    if (_accessParaAuxRegs(aux))
+    if (accessParaAuxRegs(aux))
         return NULL;
 
     // Create the structure which contains all the needed data
