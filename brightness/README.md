@@ -10,7 +10,7 @@ The brightness management works pretty well except flickering which appears when
 
 1. Manually set the brightness:
 ```sh
-# brightness &lt;brightness value between 1 and 101&gt; [&lt;color profile&gt;]
+# brightness <brightness value between 1 and 101> [<color profile>]
 ```
 
 2. Automatically set the brightness depending on the value of the brightness set  on the /sys directory (/sys/class/backlight/intel_backlight)
