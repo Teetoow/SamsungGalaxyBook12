@@ -1,3 +1,12 @@
+# Samsung Galaxy book 12 ALC 298 soundcard initialization
+The initialization of the Samsung Galaxy book 12 ALC 298 soundcard can be found in the "verbs/" directory. 
+Both scripts are available: 
+
+"initializeALC298.py": it enables the internal amplifier. After this script has been executed through <b>sudo</b> it lets the soundcard working through the internal speakers.
+
+"setHeadphone.py": following the given argument, enables the internal speaker or the headphone output.
+
+
 # Python scripts
 exploreValue.py:
     Convert values sets to specific function in human readable format.
