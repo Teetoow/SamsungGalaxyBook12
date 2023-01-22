@@ -14,3 +14,6 @@ The brightness management works pretty well except flickering which appears when
 ```
 
 2. Automatically set the brightness depending on the value of the brightness set  on the /sys directory (/sys/class/backlight/intel_backlight)
+```sh
+# brightness watch [<color profile>]
+```
