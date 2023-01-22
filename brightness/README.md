@@ -17,3 +17,10 @@ The brightness management works pretty well except flickering which appears when
 ```sh
 # brightness watch [<color profile>]
 ```
+
+Note that the color profile is a value between 0 and 6.
+- 0 is the basic color profile
+- 1 is for Cinema AMOLED profile
+- 2 is for Photo AMOLED profile
+- 3 is the adaptative profile [by default]
+- 4 to 6 are other profiles not available from windows
